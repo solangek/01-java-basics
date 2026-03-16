@@ -68,6 +68,8 @@ public abstract class Pet {
      */
     public Pet(String name) {
         if (name == null) {
+            // IllegalArgumentException is an unchecked exception,
+            // so we don't need to declare it in the method signature
             throw new IllegalArgumentException("name cannot be null");
         }
         this.name = name;

@@ -22,6 +22,9 @@ public class Dog extends Pet {
     }
 
     @Override
+    /**
+     * print out the information of the dog
+     */
     public void saySomething() {
         System.out.println("bark bark!");
     }
