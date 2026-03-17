@@ -8,13 +8,7 @@ A collection of Java examples demonstrating fundamental programming concepts inc
 # Compile the project
 mvn clean compile
 
-# Run examples using the convenience script
-./run-example.sh oop           # OOP example
-./run-example.sh oop 10        # OOP example with ship size 10
-./run-example.sh references    # References example
-./run-example.sh exceptions    # Exceptions example
-
-# Or run directly with java
+# run
 java -cp target/classes com.hac.Main
 java -cp target/classes demoref.MainDemoRef
 java -cp target/classes exceptions.Main
@@ -68,25 +62,6 @@ javac -d out src/com/hac/*.java src/demoref/*.java src/exceptions/*.java
 
 ## Running the Examples
 
-### Using the Convenience Script (Easiest)
-
-A shell script `run-example.sh` is provided for easy execution:
-
-```bash
-# Run OOP example
-./run-example.sh oop
-
-# Run OOP example with custom ship size
-./run-example.sh oop 20
-
-# Run references example
-./run-example.sh references
-
-# Run exceptions example
-./run-example.sh exceptions
-```
-
-The script will automatically compile the project if needed.
 
 ### Using Maven + Java (Recommended)
 
